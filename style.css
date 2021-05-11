@@ -32,14 +32,14 @@ body {
   background-size: cover;
 }
 header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
 
-  position: fixed;
+  /* position: fixed; */
 }
 /* Navbar */
-.navbar {
-  z-index: 100;
+#navbar {
+  /* z-index: 1; */
   -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 19px -15px rgba(0, 0, 0, 0.75);
@@ -53,21 +53,32 @@ header {
   padding: 0 15px;
   margin: 0 auto;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 
-.navbar .nav-img {
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .hero {
+  padding-top: 60px;
+}
+#navbar .nav-img {
   position: absolute;
   top: 2px;
   left: 2px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   /* border: 1px solid; */
+  padding-left: 0.6rem;
   width: 30%;
 }
-.navbar .nav-img img {
+#navbar .nav-img img {
   /* border: 1px solid; */
-  height: 90px;
+  height: 66px;
 }
 
-.navbar .nav-list {
+#navbar .nav-list {
   /* border: 4px solid; */
   display: flex;
   align-items: center;
@@ -75,16 +86,16 @@ header {
   margin: 0rem 3rem;
   flex-direction: row;
 }
-.navbar .nav-list ul {
-  padding: 1rem 1rem;
+#navbar .nav-list ul {
+  padding: 0.5rem 1rem;
   padding-right: 0rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-left: 1rem;
 }
-.navbar .nav-list ul li {
-  padding: 0.7rem 0.8rem;
+.nav-list ul li {
+  padding: 0.5rem 0.8rem;
   list-style-type: none;
   /*box-sizing: border-box;*/
   border-radius: 1rem;
@@ -96,7 +107,7 @@ header {
   color: var(--blu);
   cursor: pointer;
 }
-.navbar .nav-list ul li:hover {
+.nav-list ul li:hover {
   color: #000000;
 }
 #btn-nav {
@@ -108,6 +119,8 @@ header {
 .btn {
   background-color: #0075ff;
   border-color: #0075ff;
+  color: #fff;
+  padding: 0.2rem 0rem;
 }
 
 /*     Hero Section        */
@@ -115,7 +128,7 @@ header {
 .hero {
   background-color: var(--gra);
   /* position: absolute; */
-  margin-top: 5rem;
+  margin-top: 4rem;
   /* border: 1px solid; */
   display: flex;
 }
@@ -162,6 +175,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: blue;
   margin: 2rem;
   margin-left: 0rem;
   transform: scale(0.95);
@@ -543,26 +557,25 @@ textarea:focus {
   right: 0;
   top: 0;
   width: 30rem;
-
   margin: auto;
   perspective: 60rem;
 }
 .side {
-  height: 12rem;
+  height: 11.5rem;
   background-color: #fff;
   outline: 1px solid transparent;
 }
 .side:nth-of-type(1) {
     padding: 2rem 2rem 0;
     border-radius: 1rem 1rem 0 0;
-    box-shadow: inset 0 0.75rem 2rem rgba(229, 225, 187, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.212), inset 0 -0.57rem 2rem rgba(189, 189, 189, 0);
   }
 .side.side:nth-of-type(2) {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     border-radius: 0 0 1rem 1rem;
-    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05), inset 0 -0.57rem 2rem rgba(229, 225, 187, 0.5);
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.212), inset 0 -0.57rem 2rem rgba(189, 189, 189, 0);
     text-align: left;
   }
   .test{
@@ -691,14 +704,14 @@ textarea:focus {
  75% {transform: translateY(-8rem) scale(0.5, 0.5);}
  90% {transform: translateY(-8rem) scale(0.3, 0.5);}
  97% {transform: translateY(-8rem) scale(0.33, 0.5);}
- 100%{transform: translateY(-8rem) scale(0.3, 0.5);}
+ 100%{transform: translateY(-8rem) scale(0.3, 0.3);}
 }
 @keyframes scaleLetter {
  66% {transform: translateY(-8rem) scale(0.5, 0.5);}
- 75% {transform: translateY(-8rem) scale(0.5, 0.5);}
- 90% {transform: translateY(-9.5rem) scale(0.3, 0.5);}
- 97% {transform: translateY(-10rem) scale(0.33, 0.5);}
- 100%{transform: translateY(-11.5rem) scale(0.3, 0.5);}
+ 75% {transform: translateY(-8rem) scale(0.5, 0.4.8);}
+ 90% {transform: translateY(-9.5rem) scale(0.3, 0.4.4);}
+ 97% {transform: translateY(-10rem) scale(0.33, 0.4);}
+ 100%{transform: translateY(-10.5rem) scale(0.3, 0.3);}
 }
 
 
