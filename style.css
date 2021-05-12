@@ -126,7 +126,6 @@ header {
 /*     Hero Section        */
 
 .hero {
-  background-color: var(--gra);
   /* position: absolute; */
   margin-top: 4rem;
   /* border: 1px solid; */
