@@ -21,6 +21,7 @@ body {
   -webkit-font-smotthing: antialiased;
 }
 .parallax{
+  /* border: 1px blue solid; */
   background-image: url("./Images/Colors.svg");
 
   /* Full height */
@@ -40,11 +41,15 @@ header {
 }
 /* Navbar */
 #navbar {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   /* z-index: 1; */
-  -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 19px -15px rgba(0, 0, 0, 0.75);
-  /* border: 1px solid; */
+  box-shadow: 0px 4px 19px -15px rgba(0, 0, 0, 0.75); */
+  
+  /* border-bottom: 1px rgba(18, 14, 221, 0.116) solid; */
   background-color: white;
 
   display: flex;
@@ -55,16 +60,17 @@ header {
   margin: 0 auto;
 }
 .sticky {
-  position: fixed;
-  top: 0;
+  /* border: 1px red solid; */
+  
+  box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
   width: 100%;
   z-index: 10000;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .hero {
-  padding-top: 60px;
-}
+/* .sticky + .parallax {
+  margin-top:10rem;
+} */
 #navbar .nav-img {
   position: absolute;
   top: 2px;
@@ -108,13 +114,18 @@ header {
   color: var(--blu);
   cursor: pointer;
 }
-.nav-list ul li:hover {
+.nav-list ul li a{
+  text-decoration: none;
+  color: var(--blu);
+  transition: all 0.5s ease;
+}
+.nav-list ul li a:hover {
   color: #000000;
 }
-#btn-nav {
+#btn-nav a{
   color: #fff;
 }
-#btn-nav:hover {
+#btn-nav a:hover {
   color: #000000;
 }
 .btn {
@@ -124,12 +135,31 @@ header {
   padding: 0.2rem 0rem;
 }
 
+
+
+.menu-toggle{
+  float: right;
+  cursor: pointer;
+  display: none;
+  
+}
+
+
+@media (max-width:991px) {
+  .menu-toggle{
+    display: block;
+  }
+  #navbar .nav-list{
+    display: none;
+  }
+}
+
 /*     Hero Section        */
 
 .hero {
   /* position: absolute; */
-  margin-top: 4rem;
-  /* border: 1px solid; */
+  margin-top: 4.5rem;
+  /* border: 1px red solid; */
   display: flex;
 }
 .hero .left {
@@ -799,6 +829,27 @@ textarea:focus {
 
 
 
+
+
+
+/* hero starts here  */
+
+@media (max-width:376px) {
+  .hero .right{
+    display: none;
+  }
+  .hero .left{
+    padding: 0rem;
+    width: 100%;
+    margin-right:0rem;
+    margin-left: 2rem;
+  }
+}
+
+
+
+
+
 /*    Media querry for one    */
 
 @media (max-width:845px) {
@@ -826,7 +877,7 @@ textarea:focus {
 
 
 
-/*    Media querry for two starts here */
+/*  two starts here */
 
 @media (max-width:800px) {
     .two{
@@ -1021,14 +1072,3 @@ textarea:focus {
 
 
 
-@media (max-width:376px) {
-  .hero .right{
-    display: none;
-  }
-  .hero .left{
-    padding: 0rem;
-    width: 100%;
-    margin-right:0rem;
-    margin-left: 2rem;
-  }
-}
