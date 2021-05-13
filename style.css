@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
   -webkit-font-smotthing: antialiased;
 }
 .parallax{
@@ -427,9 +428,6 @@ header {
     margin: 4rem;
     margin-top: 0rem;
     padding:2rem;
-    /* background-color: wheat; */
-    border: 1px red solid;
-
 }
 .three .three-head{
 
@@ -469,7 +467,7 @@ header {
 
 
 .four{
-  border: 1px solid;
+  /* border: 1px solid; */
   position: relative;
 
     margin-top: 0rem;
@@ -511,7 +509,7 @@ header {
   flex: 1 100%;
   position: relative;
   /*left: 1%;*/
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
   width: 100%;
   
   /* min-height: 0rem; */
@@ -608,7 +606,7 @@ textarea:focus {
   }
 .envelope {
   position: absolute;
-  left: 0;
+  left:0;
   right: 0;
   top: 0;
   margin: auto;
@@ -893,7 +891,7 @@ textarea:focus {
 
 
 
-
+/*          Four starts here          */
 
 
 
@@ -920,8 +918,93 @@ textarea:focus {
   
 }
 
+@media (max-width:560px) {
+  .four{
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .four .four-container .letter{
+    /* width: 27rem; */
+    margin: 0rem 1rem;
+  }
+  .envelope{
+    position: absolute;
+    left: -2.9rem;
+  }
+  
+}
 
+@media (max-width:514px) {
+  .four .four-container .letter{
+    width: 27rem;
+    margin: 0rem 2rem;
+  }
+  .envelope{
+    position: absolute;
+    left: -3.8rem;
+  }
+  
+}
 
+@media (max-width:491px) {
+  .four .four-container .letter{
+    width: 24rem;
+    margin: 0rem 2.5rem;
+  }
+  .envelope{
+    position: absolute;
+    left: -5.9rem;
+  }
+  
+}
+
+@media (max-width:450px) {
+  .four .four-container .letter{
+    width: 22rem;
+    
+  }
+  .envelope{
+    position: absolute;
+    left: -7.8rem;
+  }
+  
+}
+@media (max-width:422px) {
+  .four .four-container .letter{
+    width: 20rem;
+    
+  }
+  .envelope{
+    position: absolute;
+    left: -9.9rem;
+  }
+  
+  
+}
+@media (max-width:375px) {
+  .four .four-container .letter{
+    width: 18rem;
+    
+    
+  }
+  .envelope{
+    position: absolute;
+    left: -12.1rem;
+  }
+  
+}
+@media (max-width:340px) {
+  .four .four-container .letter{
+    width: 18rem;
+    margin: 0rem 1.5rem;
+    
+  }
+  .envelope{
+    position: absolute;
+    left: -14.1rem;
+  }
+  
+}
 
 
 
