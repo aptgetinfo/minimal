@@ -192,9 +192,10 @@ header {
 
 
 .one{
-    margin: 4rem;
+    margin: 3rem;
     padding:2rem;
-    /* background-color: wheat; */
+    
+    /* border:1px red solid; */
 
 }
 .one .one-head{
@@ -427,6 +428,7 @@ header {
     margin-top: 0rem;
     padding:2rem;
     /* background-color: wheat; */
+    border: 1px red solid;
 
 }
 .three .three-head{
@@ -452,15 +454,11 @@ header {
 }
 .three .three-container .text{
     
-    margin: 1rem;
-    
-    /* transform: translateZ(20px); */
+  margin: 1rem;
+  /* transform: translateZ(20px); */
 }
 .three .three-container p{
-    
-    
-    /* background-color: cornsilk; */
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 
@@ -793,6 +791,112 @@ textarea:focus {
   width: 90%;
   height: auto;
 }
+/* Media querry starts here*/
+
+
+
+
+
+
+
+
+
+/*    Media querry for one    */
+
+@media (max-width:845px) {
+  .one{
+    padding: 0rem;
+  }
+} 
+
+  
+@media (max-width:780px) {
+  .one{
+    margin: 3rem 0.6rem;
+  }
+  
+}
+    
+@media (max-width:335px) {
+  .one .one-container .card{
+    margin: 1.4rem 1.2rem;
+    padding: 1.2rem 1rem;
+  }
+  }
+  
+
+
+
+
+/*    Media querry for two starts here */
+
+@media (max-width:800px) {
+    .two{
+      padding: 0rem;
+      margin: 2rem;
+    }
+}
+@media (max-width:673px) {
+  .two{
+    margin: 0rem;
+  }
+}
+@media (max-width:609px){
+  .two-container{
+    margin: 0rem;
+  }
+}
+  
+
+
+
+
+
+/*    Three starst here   */
+
+
+@media (max-width:1180px) {
+  .three{
+    padding: 0rem;
+    margin: 2rem;
+  }
+}
+
+@media (max-width:1125px) {
+  .three{
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
+@media (max-width:730px) {
+  .three{
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
+
+@media (max-width:545px) {
+  .three .three-container{
+    margin: 0.5rem;
+    padding: 0.3rem;
+  }
+}
+@media (max-width:400px) {
+  .three .three-container{
+    margin: 0rem;
+    margin-left: 0.5rem;
+    padding: 0rem;
+    padding-left: 0.3rem;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 @media (max-width:1030px) {
@@ -816,7 +920,14 @@ textarea:focus {
   
 }
 
-@media (max-width:400px) {
+
+
+
+
+
+
+
+@media (max-width:376px) {
   .hero .right{
     display: none;
   }
@@ -825,18 +936,5 @@ textarea:focus {
     width: 100%;
     margin-right:0rem;
     margin-left: 2rem;
-  }
-  .one{
-    padding: 0rem;
-    margin: 2rem;
-
-  }
-  .three{
-    padding: 0rem;
-    margin: 1rem;
-  }
-  .three .three-container{
-    padding: 0rem;
-    margin: 0rem;
   }
 }
