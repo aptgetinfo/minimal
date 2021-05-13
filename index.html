@@ -15,25 +15,28 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./Images/dlogo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>DevDeg</title>
   </head>
   <body>
-    <div class="parallax">
-      <header>
-        <div id="navbar">
-          <div class="nav-img">
-            <img src="./Images/icon.png" alt="" />
-          </div>
-          <div class="nav-list">
-            <ul>
-              <li>Home</li>
-              <li>Services</li>
-              <li>Our Team</li>
-              <li id="btn-nav" class="btn">Contact Us</li>
-            </ul>
-          </div>
+    <header id="home">
+      <div id="navbar">
+        <div class="nav-img">
+          <img src="./Images/icon.png" alt="" />
         </div>
-      </header>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li id="btn-nav" class="btn"><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+      </div>
+    </header>
+    <div class="parallax">
       <div class="hero">
         <div class="left">
           <div class="quote1">
@@ -52,14 +55,13 @@
         </div>
       </div>
     </div>
-    <section class="one">
-      <div class="one-head">
+    <section class="one" data-aos="fade-up" id="service">
+      <div class="one-head" data-aos="fade-up">
         <h1>Services</h1>
       </div>
-      <div class="one-container">
+      <div class="one-container" data-aos="fade-up">
         <!-- <div class="card-row"> -->
-        <div class="card">
-          
+        <div class="card" data-aos="fade-up">
           <img src="./Images/webdev.svg" alt="" />
           <h1>Web Devlopment</h1>
           <p>
@@ -69,7 +71,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="./Images/webdev.svg" alt="" />
           <h1>Graphics Designing</h1>
           <p>
@@ -79,7 +81,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="./Images/content.svg" alt="" />
           <h1>Content Writing</h1>
           <p>
@@ -88,9 +90,9 @@
             optio ipsum est assumenda fugit omnis veniam itaque aut.
           </p>
         </div>
-      <!-- </div> -->
-      <!-- <div class="card-row"> -->
-        <div class="card">
+        <!-- </div> -->
+        <!-- <div class="card-row"> -->
+        <div class="card" data-aos="fade-up">
           <img src="./Images/webdev.svg" alt="" />
           <h1>Digital Marketing</h1>
           <p>
@@ -100,7 +102,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="./Images/video.svg" alt="" />
           <h1>Video Editing</h1>
           <p>
@@ -112,13 +114,13 @@
       </div>
       <!-- </div> -->
     </section>
-    <section class="two">
-      <div class="two-head">
+    <section class="two" data-aos="fade-up" id="team">
+      <div class="two-head" data-aos="fade-up">
         <h1>Team</h1>
       </div>
-      <div class="two-container">
+      <div class="two-container" data-aos="fade-up">
         <!-- <div class="our-team-row"> -->
-        <div class="our-team">
+        <div class="our-team" data-aos="fade-up">
           <div class="picture">
             <img
               class="img-fluid"
@@ -161,7 +163,7 @@
           </ul>
         </div>
 
-        <div class="our-team">
+        <div class="our-team" data-aos="fade-up">
           <div class="picture">
             <img
               class="img-fluid"
@@ -203,9 +205,9 @@
             </li>
           </ul>
         </div>
-      <!-- </div> -->
-      <!-- <div class="our-team-row"> -->
-        <div class="our-team">
+        <!-- </div> -->
+        <!-- <div class="our-team-row"> -->
+        <div class="our-team" data-aos="fade-up">
           <div class="picture">
             <img
               class="img-fluid"
@@ -248,7 +250,7 @@
           </ul>
         </div>
 
-        <div class="our-team">
+        <div class="our-team" data-aos="fade-up">
           <div class="picture">
             <img
               class="img-fluid"
@@ -291,7 +293,7 @@
           </ul>
         </div>
 
-        <div class="our-team">
+        <div class="our-team" data-aos="fade-up">
           <div class="picture">
             <img
               class="img-fluid"
@@ -334,14 +336,13 @@
           </ul>
         </div>
       </div>
-    <!-- </div> -->
     </section>
-    <section class="three">
-      <div class="three-head">
+    <section class="three" data-aos="fade-up" id="about">
+      <div class="three-head" data-aos="fade-up">
         <h1>About Us</h1>
       </div>
-      <div class="three-container">
-        <div class="text">
+      <div class="three-container" data-aos="fade-up">
+        <div class="text" data-aos="fade-up">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem natus repellendus nulla facere. Accusamus quibusdam
@@ -361,12 +362,12 @@
       </div>
     </section>
 
-    <section class="four">
-      <div class="four-head">
+    <section class="four" data-aos="fade-up" id="contact">
+      <div class="four-head" data-aos="fade-up">
         <h1>Contact Us</h1>
       </div>
-      <div class="four-container">
-        <div class="left">
+      <div class="four-container" data-aos="fade-up">
+        <div class="left" data-aos="fade-up">
           <!-- start here -->
           <div class="wrapper centered">
             <article class="letter">
@@ -403,18 +404,18 @@
           <p class="result-message centered">Thank you for your message</p>
           <!-- end here -->
         </div>
-        <div class="right">
-          <div class="right-card">
+        <div class="right" data-aos="fade-up">
+          <div class="right-card" data-aos="fade-up">
             <h1>Phone</h1>
             <p>+91 7985558211</p>
           </div>
 
-          <div class="right-card">
+          <div class="right-card" data-aos="fade-up">
             <h1>Email</h1>
             <p>contact@devdeg.com</p>
           </div>
 
-          <div class="right-card">
+          <div class="right-card" data-aos="fade-up">
             <h1>LWDE</h1>
             <p>LOG</p>
           </div>
@@ -450,6 +451,13 @@
           navbar.classList.remove("sticky");
         }
       }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        delay: 100,
+      });
     </script>
   </body>
 </html>
