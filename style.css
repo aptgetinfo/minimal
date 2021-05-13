@@ -1006,6 +1006,17 @@ textarea:focus {
   
 }
 
+@media (max-width:330px) {
+  .four .four-container .letter{
+    width: 15rem;
+  }
+  .envelope{
+    position: absolute;
+    left: -16.8rem;
+  }
+  
+}
+
 
 
 
