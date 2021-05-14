@@ -138,7 +138,9 @@ header {
 
 
 .menu-toggle{
-  float: right;
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
   cursor: pointer;
   display: none;
   
@@ -146,12 +148,37 @@ header {
 
 
 @media (max-width:991px) {
+  .nav-img{
+    
+  }
   .menu-toggle{
     display: block;
   }
-  #navbar .nav-list{
+  /* .nav-list{
+    left: 100%;
+  } */
+  #navbar .nav-list ul{
     display: none;
+    background: white;
   }
+  #navbar .nav-list.active ul{
+    border: 1px solid;
+    margin: 4rem 0rem;
+    display: block;
+    
+  }
+  #navbar{
+    align-items: center;
+    justify-content: center;
+    
+  }
+  #navbar .nav-list.active ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
 }
 
 /*     Hero Section        */
