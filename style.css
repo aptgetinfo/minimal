@@ -162,7 +162,6 @@ header {
     background: white;
   }
   #navbar .nav-list.active ul{
-    border: 1px solid;
     margin: 4rem 0rem;
     display: block;
     
@@ -861,15 +860,60 @@ textarea:focus {
 
 /* hero starts here  */
 
-@media (max-width:376px) {
+
+@media (max-width:1140px) {
+  .hero .left{
+    margin: 0rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    }
+}
+
+
+
+
+@media (max-width:1040px) {
+  .hero .right{
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0rem;
+
+    
+    /* border: 1px solid; */
+  }
+  .hero .left{
+    /* width: 90%; */
+    margin: 0rem;
+    margin-left: 1rem;
+    padding: 0rem;
+    }
+}
+@media (max-width:990px) {
+  .hero .left{
+    width: 60%;
+  }
+}
+
+
+
+@media (max-width:540px) {
   .hero .right{
     display: none;
   }
   .hero .left{
-    padding: 0rem;
     width: 100%;
-    margin-right:0rem;
-    margin-left: 2rem;
+    padding: 2.5rem;
+  }
+}
+
+
+
+
+@media (max-width:448px) {
+  .hero .left{
+    padding: 0;
   }
 }
 
