@@ -33,7 +33,7 @@
             <li id="btn-nav" class="btn"><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
-        <!-- <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+        <div class="menu-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
       </div>
     </header>
     <div class="parallax">
@@ -458,6 +458,14 @@
         offset: 200,
         delay: 100,
       });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+          $('.nav-list').toggleClass('active')
+        })
+      })
     </script>
   </body>
 </html>
