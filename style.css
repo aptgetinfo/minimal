@@ -896,6 +896,15 @@ textarea:focus {
   }
 }
 
+@media (max-width:755) {
+  .hero .left{
+    width: 100%;
+  }
+  .hero .right{
+    width: 20%;
+  }
+  
+}
 
 
 @media (max-width:540px) {
