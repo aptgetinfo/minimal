@@ -22,7 +22,7 @@ body {
 }
 .parallax{
   /* border: 1px blue solid; */
-  background-image: url("./Images/Colors.svg");
+  background-image: url("./Images/bng-01.svg");
 
   /* Full height */
   height: 100%;
@@ -317,7 +317,7 @@ header {
     height: 70px;
     background: #f8f8f9;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 29%;
     padding: 1rem;
     padding-top: 15px;
     transition: all 0.5s ease;
@@ -351,6 +351,10 @@ header {
     margin: 4rem;
     margin-bottom: 0rem;
     padding:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* background-color: wheat; */
 
 }
@@ -372,6 +376,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 2rem;
+    max-width: 950px;
 }
 .two-container .our-team{
     padding: 30px 0 40px;
@@ -509,6 +514,7 @@ header {
 .three .three-container .text{
     
   margin: 1rem;
+  font-size: 25px;
   /* transform: translateZ(20px); */
 }
 .three .three-container p{
