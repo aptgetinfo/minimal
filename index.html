@@ -55,13 +55,13 @@
         </div>
       </div>
     </div>
-    <section class="one" data-aos="fade-up" id="service">
-      <div class="one-head" data-aos="fade-up">
+    <section class="one"  id="service">
+      <div class="one-head" >
         <h1>Services</h1>
       </div>
-      <div class="one-container" data-aos="fade-up">
+      <div class="one-container" data-aos="fade-up" >
         <!-- <div class="card-row"> -->
-        <div class="card" data-aos="fade-up">
+        <div class="card">
           <img src="./Images/webdev.svg" alt="" />
           <h1>Web Devlopment</h1>
           <p>
@@ -362,30 +362,30 @@
       </div>
     </section>
 
-    <section class="four" data-aos="fade-up" id="contact">
-      <div class="four-head" data-aos="fade-up">
+    <section class="four" id="contact">
+      <div class="four-head">
         <h1>Contact Us</h1>
       </div>
-      <div class="four-container" data-aos="fade-up">
-        <div class="left" data-aos="fade-up">
+      <div class="four-container">
+        <div class="left">
           <!-- start here -->
           <div class="wrapper centered">
-            <article class="letter">
+            <form method="POST" class="letter">
               <div class="side">
                 <h1>Contact us</h1>
                 <p>
-                  <textarea placeholder="Tell us About Your Idea"></textarea>
+                  <textarea id="concern" placeholder="Tell us About Your Idea"></textarea>
                 </p>
               </div>
               <div class="side">
                 <p>
-                  <input type="text" placeholder="Your name" />
+                  <input id="name" type="text" placeholder="Your name" />
                 </p>
                 <p>
-                  <input type="text" placeholder="Phone Number" />
+                  <input id="phone" type="text" placeholder="Phone Number" />
                 </p>
                 <p>
-                  <input type="email" placeholder="Your email" />
+                  <input id="email" type="text" placeholder="Your email" />
                 </p>
                 <p>
                   By clicking on the send you have agreed to our Terms of
@@ -393,29 +393,29 @@
                 </p>
                 <div class="test">
                   <p>
-                    <button id="sendLetter">Send</button>
+                    <button id="sendLetter" onclick="sendmail();">Send</button>
                   </p>
                 </div>
               </div>
-            </article>
+            </form>
             <div class="envelope front"></div>
             <div class="envelope back"></div>
           </div>
           <p class="result-message centered">Thank you for your message</p>
           <!-- end here -->
         </div>
-        <div class="right" data-aos="fade-up">
-          <div class="right-card" data-aos="fade-up">
+        <div class="right">
+          <div class="right-card">
             <h1>Phone</h1>
             <p>+91 7985558211</p>
           </div>
 
-          <div class="right-card" data-aos="fade-up">
+          <div class="right-card">
             <h1>Email</h1>
             <p>contact@devdeg.com</p>
           </div>
 
-          <div class="right-card" data-aos="fade-up">
+          <div class="right-card">
             <h1>LWDE</h1>
             <p>LOG</p>
           </div>
@@ -466,6 +466,44 @@
           $('.nav-list').toggleClass('active')
         })
       })
+    </script>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script><script>  
+    
+         function sendmail(){
+        
+          var name = $('#name').val();
+          var email = $('#email').val();
+          var phone = $('#phone').val();
+          var message = $('#concern').val();
+    
+          // var body = $('#body').val();
+    
+          var Body='Name: '+name+'<br>Email: '+email+'<br>phone: '+phone+'<br>Message: '+message;
+          console.log(name, phone, email, message);
+    
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "degdev6@gmail.com",
+            Password: "fgagdbtxhfvizfsb",
+            To: "arpantyagi88@gmail.com",
+            From: "degdev6@gmail.com",
+            Subject: "New message on contact from "+name,
+            Body: Body
+          }).then(
+            (message) =>{
+              console.log (message);
+              if(message=='OK'){
+              alert('Your mail has been send. Thank you for connecting.');
+              }
+              else{
+                console.error (message);
+                alert('There is error at sending message. ') 
+              }
+            }
+          );
+        }
     </script>
   </body>
 </html>
