@@ -19,18 +19,19 @@
     <title>DevDeg</title>
   </head>
   <body>
-    <header id="home">
+    <section id="home">
+    <header>
       <div id="navbar">
         <div class="nav-img">
           <img src="./Images/icon.png" alt="" />
         </div>
         <div class="nav-list">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li id="btn-nav" class="btn"><a href="#contact">Contact Us</a></li>
+            <li class="home active"><a href="#home">Home</a></li>
+            <li class="service"><a href="#service">Services</a></li>
+            <li class="team"><a href="#team">Our Team</a></li>
+            <li class="about"><a href="#about">About Us</a></li>
+            <li id="btn-nav" class="btn contact"><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
         <div class="menu-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
@@ -55,6 +56,7 @@
         </div>
       </div>
     </div>
+  </section>
     <section class="one"  id="service">
       <div class="one-head" >
         <h1>Services</h1>
@@ -396,7 +398,7 @@
         </div>
       </div>
     </section>
-    <section class="five">
+    <section class="five" id="copy">
       <div class="five-container">
         <h4>Copyright © 2020-2021 DevDeg.com</h4>
       </div>
@@ -445,7 +447,6 @@
         })
       })
     </script>
-
 
   <script src="https://smtpjs.com/v3/smtp.js"></script><script>  
     
