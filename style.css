@@ -161,11 +161,12 @@ header {
   #navbar .nav-list ul{
     display: none;
     background: white;
+    transition: all 0.5s ease;
   }
   #navbar .nav-list.active ul{
     margin: 4rem 0rem;
     display: block;
-    
+    transition: all 0.5s ease;
   }
   #navbar{
     align-items: center;
