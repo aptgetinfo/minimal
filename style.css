@@ -852,6 +852,28 @@ textarea:focus {
 /* Media querry starts here*/
 
 
+.five{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #302B63;
+  padding:1rem;
+  color: white;
+}
+.five-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  
+}
+
+.five-container h1{
+  font: 100;
+  font-size: 100%;
+  
+}
+
 
 
 
