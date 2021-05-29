@@ -303,7 +303,7 @@ header {
 .one .one-container .card{
     position: relative;
     width: 255px;
-    height: 255px;
+    height: 265px;
     overflow: hidden;
     margin: 1.4rem 1.4rem;
     padding: 1.2rem;
@@ -972,6 +972,9 @@ textarea:focus {
 @media (max-width:845px) {
   .one{
     padding: 0rem;
+  }
+  .one .one-container .card{
+    height: 305px;   /* delet the .card section */
   }
 } 
 
