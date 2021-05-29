@@ -1172,12 +1172,18 @@ textarea:focus {
     height: 60rem;
   }
   .four .four-container .right{
-    min-height: 10rem;
-    border: 1px solid;
+    min-height: 30rem;
+    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
+}
+.four .four-container .right .right-card{
+  min-height: 3rem;
+  padding: 2rem 0rem;
+  padding-top: 1rem;
 }
 }
