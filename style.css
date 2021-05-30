@@ -133,6 +133,7 @@ header {
 .nav-list ul li.active a{
   color: #000000;
 }
+
 #btn-nav.active{
   background-color: #0075ff;
 }
