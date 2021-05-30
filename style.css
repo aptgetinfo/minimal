@@ -31,7 +31,7 @@ body {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -213,16 +213,20 @@ header {
   /* align-items: center; */
   justify-content: center;
 }
-.hero .left .quote1 {
+.hero .left .quote1 h1{
   /* color:#5A82E0; */
   color: #265080;
-  font-size: 2rem;
+  font-size: 4.3rem;
   /* font-weight: 1000; */
-  line-height: 4.5rem;
+  line-height: 5rem;
   margin-bottom: 2rem;
+  font-family: 'Roboto Slab', serif;
 }
-.hero .left .quote2 {
+.hero .left .quote2 h3{
   color: #0075ff;
+  font-size: 1.7rem;
+  font-family: 'Roboto',sans-serif;
+
 }
 .hero .right {
   margin: 2rem;
@@ -253,7 +257,10 @@ header {
   transform: scale(1);
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
 }
-
+.hero .btn-hero a{
+  text-decoration: none;
+  color: #fff;
+}
 
 
 /*   Services Begins here    */
@@ -277,6 +284,7 @@ header {
 .one .one-head h1{
     border-bottom: 1px solid;
     border-color: var(--blu);
+    font-size: 2.2rem;
 }
 .one .one-container{
   display: flex;
@@ -317,13 +325,17 @@ header {
 }
 .one .one-container .card h1{
     margin: 4rem 0rem;
-    color: #8c8f8ffd;
+    margin-bottom: 5rem;
+    color: #010101;
     transition: all 0.5s ease;
+    
 }
 .one .one-container .card p{
     color: var(--blu);
     visibility: hidden;
     transition: all 0.5s ease;
+    font-weight: normal;
+    
     
 }
 .one .one-container .card img{
@@ -452,7 +464,7 @@ header {
     transform: scale(0.7);
 }
 .our-team .name {
-    color: #8c8f8ffd;
+    color: #010101;
 }
 .our-team .title {
     display: block;
@@ -960,6 +972,25 @@ textarea:focus {
 @media (max-width:448px) {
   .hero .left{
     padding: 0;
+  }
+  .hero .left .quote1 h1{
+    /* color:#5A82E0; */
+    color: #265080;
+    
+    font-size: 3.5rem;
+    /* font-weight: 1000; */
+    line-height: 4rem;
+    margin: 1rem 0rem;
+    font-family: 'Roboto Slab', serif;
+  }
+  /* .hero .left .quote1 span{
+    color: #1656a0;
+  } */
+  .hero .left .quote2 h3{
+    color: #0075ff;
+    font-size: 1.3rem;
+    font-family: 'Roboto',sans-serif;
+  
   }
 }
 
