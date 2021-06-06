@@ -951,7 +951,7 @@ textarea:focus {
 
 @media (max-width:440px) {
   .parallax{
-    height: 90vh;
+    height: 90%;
   }
   .hero{
     display: flex;
@@ -959,6 +959,7 @@ textarea:focus {
   }
   .hero .right img{
     max-height: 385px;
+    margin-bottom: 0.2rem;
   }
   
 }
