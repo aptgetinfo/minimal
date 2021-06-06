@@ -912,6 +912,17 @@ textarea:focus {
 /* parallax starts here */
 
 
+
+@media (max-width:500px){
+  .hero .left{
+    max-width: 90%;
+  }
+  .hero .left .quote1,.quote2{
+    max-width: 90%;
+  }
+}
+
+
 @media (max-width:400px) {
   .parallax{
     min-height: 90vh;
@@ -924,15 +935,6 @@ textarea:focus {
   
 }
 
-
-@media (max-width:500px){
-  .hero .left{
-    max-width: 90%;
-  }
-  .hero .left .quote1,.quote2{
-    max-width: 90%;
-  }
-}
 
 
 
@@ -957,6 +959,7 @@ textarea:focus {
     align-items: center;
     justify-content: center;
     margin: 0rem;
+    margin-top: 1rem;
     padding: 0rem;
 
     
@@ -972,6 +975,7 @@ textarea:focus {
 @media (max-width:990px) {
   .hero .left{
     width: 60%;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1038,6 +1042,43 @@ textarea:focus {
   
 }
 
+@media (max-width:400px) {
+  .hero .left .quote1 h1{
+    font-size: 3.5rem;
+  }
+  
+}
+
+@media (max-width:350px) {
+
+  .hero .left .quote1 h1{
+    font-size: 3.2rem;
+  }
+  
+}
+@media (max-width:325px) {
+
+  .hero .left .quote1 h1{
+    font-size: 3rem;
+  }
+  
+}
+
+@media (max-width:300px) {
+
+  .hero .left .quote1 h1{
+    font-size: 2.8rem;
+  }
+  
+}
+
+@media (max-width:285px) {
+
+  .hero .left .quote1 h1{
+    font-size: 2.5rem;
+  }
+  
+}
 
 
 
