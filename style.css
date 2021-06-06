@@ -127,8 +127,12 @@ header {
   color: var(--blu);
   transition: all 0.5s ease;
 }
-.nav-list ul li a:hover {
+.nav-list ul li:hover a {
   color: #000000;
+}
+.nav-list ul li:hover{
+  background-color: #0077ff1a;
+  transition: 0.3s ease background-color;
 }
 .nav-list ul li.active{
   background-color: #0077ff1a;
