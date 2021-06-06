@@ -27,13 +27,17 @@ body {
   background-image: url("./Images/bng2.svg");
 
   /* Full height */
-  height: 100%;
+  
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   /* background-position: center; */
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
 }
 header {
   /* position: absolute; */
@@ -913,6 +917,16 @@ textarea:focus {
 
 
 
+@media (max-width:530px){
+  
+  .hero .left{
+    max-width: 90%;
+  }
+  .hero .left .quote1,.quote2{
+    max-width: 90%;
+  }
+}
+
 @media (max-width:500px){
   .hero .left{
     max-width: 90%;
@@ -923,14 +937,17 @@ textarea:focus {
 }
 
 
-@media (max-width:400px) {
+
+@media (max-width:440px) {
   .parallax{
-    min-height: 90vh;
-    background-position: center;
+    height: 90vh;
   }
   .hero{
     display: flex;
     flex-direction: column;
+  }
+  .hero .right img{
+    max-height: 385px;
   }
   
 }
@@ -1035,7 +1052,7 @@ textarea:focus {
   
 }
 
-@media (max-width:400px) {
+@media (max-width:440px) {
   .hero .right{
     display: flex;
   }
