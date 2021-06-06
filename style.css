@@ -1345,8 +1345,12 @@ textarea:focus {
 }
 
 @media (max-width:627px) {
+  .four .four-container .right{
+    margin: 0rem 0.5rem;
+  }
   .four .four-container .right .right-card{
     padding:1rem 0;
+    margin:1rem auto;
 }
 }
 
@@ -1362,7 +1366,7 @@ textarea:focus {
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .four .four-container .right .right-card{
   min-height: 3rem;
