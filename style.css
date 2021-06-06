@@ -297,11 +297,12 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  max-width: 1260px;
   /* border: 1px solid; */
   /* grid-template-columns: repeat(3 , 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem; */
-  margin: 2rem 0rem;
+  margin: 2rem auto;
   padding:1rem 0rem;
 }
 /* .one .one-container .card-row{
@@ -534,9 +535,10 @@ header {
 }
 
 .three .three-container{
-    margin: 2rem;
+    margin: 2rem auto;
     padding: 2rem;
     border-left: 1px var(--blu) solid;
+    max-width: 1260px;
     /* background-color: blanchedalmond; */
     /* transform-style: preserve-3d;
     transform: perspective(1000px); */
@@ -591,9 +593,11 @@ header {
   text-align: center;
   font-family: monospace;
   overflow: hidden;
+  margin:0 auto ;
   margin-top: 0rem;
   padding: 3rem;
   height: 40rem;
+  max-width: 1260px;
 }
 
 /*  test starts here*/
@@ -870,8 +874,9 @@ textarea:focus {
   transform: scale(0.95);
   transition: box-shadow 0.5s, transform 0.5s;
 }
-.four .four-container .right .right-card p{
+.four .four-container .right .right-card a{
   color: var(--blu);
+  text-decoration: none;
 }
 .four .four-container .right .right-card:hover{
   transform: scale(1);
@@ -909,7 +914,7 @@ textarea:focus {
 
 @media (max-width:400px) {
   .parallax{
-    min-height: 95vh;
+    min-height: 90vh;
     background-position: center;
   }
   .hero{
