@@ -211,6 +211,8 @@ header {
 /*     Hero Section        */
 
 .hero {
+  /* max-width: 1440px; */
+  margin: 0rem auto;
   /* position: absolute; */
   margin-top: 4.5rem;
   /* border: 1px red solid; */
@@ -893,10 +895,21 @@ textarea:focus {
   color: var(--blu);
   text-decoration: none;
 }
+
+.four .four-container .right .right-card .links{
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
 .four .four-container .right .right-card:hover{
   transform: scale(1);
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
 }
+
+
 /* Media querry starts here*/
 
 
