@@ -1336,6 +1336,15 @@ textarea:focus {
   }
   
 }
+
+@media (max-width:377px){
+  .test{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+  }
+}
+
 @media (max-width:340px) {
   .four .four-container .letter{
     width: 18rem;
@@ -1351,13 +1360,18 @@ textarea:focus {
 
 @media (max-width:330px) {
   .four .four-container .letter{
-    width: 15rem;
+    width: 16rem;
+    /* margin: 0rem 1rem; */
   }
   .envelope{
     position: absolute;
     left: -16.8rem;
   }
-  
+  .test{
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+  }
 }
 
 /*    four right starts here     */ 
