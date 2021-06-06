@@ -145,11 +145,15 @@ header {
 #btn-nav.active{
   background-color: #0075ff;
 }
+#btn-nav{
+  background-color: #0075ff;
+}
+
 
 #btn-nav a{
   color: #fff;
 }
-#btn-nav a:hover {
+#btn-nav:hover a{
   color: #000000;
 }
 .btn {
