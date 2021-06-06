@@ -1049,6 +1049,7 @@ textarea:focus {
     /* font-weight: 1000; */
     line-height: 4rem;
     margin: 1rem 0rem;
+    margin-bottom: 0.5rem;
     font-family: 'Roboto Slab', serif;
   }
   /* .hero .left .quote1 span{
