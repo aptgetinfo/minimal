@@ -222,14 +222,17 @@ header {
   line-height: 5rem;
   margin-bottom: 2rem;
   font-family: 'Roboto Slab', serif;
+  /* border: 1px solid black; */
 }
 .hero .left .quote2 h3{
+  /* border: 1px solid blue; */
   color: #0075ff;
   font-size: 1.7rem;
   font-family: 'Roboto',sans-serif;
 
 }
 .hero .right {
+  /* border: 1px solid red; */
   margin: 2rem;
   padding: 2rem;
   display: flex;
@@ -238,6 +241,7 @@ header {
   /* border: 1px solid; */
 }
 .hero .right img {
+  /* border: 1px solid red; */
   width: 85%;
   height: auto;
 }
@@ -900,10 +904,30 @@ textarea:focus {
 
 
 
+/* parallax starts here */
 
 
+@media (max-width:400px) {
+  .parallax{
+    min-height: 95vh;
+    background-position: center;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
 
 
+@media (max-width:500px){
+  .hero .left{
+    max-width: 90%;
+  }
+  .hero .left .quote1,.quote2{
+    max-width: 90%;
+  }
+}
 
 
 
@@ -968,6 +992,12 @@ textarea:focus {
 }
 
 
+@media (max-width:460px) {
+  .hero .left{
+    padding: 0;
+  }
+}
+
 
 
 @media (max-width:448px) {
@@ -993,6 +1023,14 @@ textarea:focus {
     font-family: 'Roboto',sans-serif;
   
   }
+  
+}
+
+@media (max-width:400px) {
+  .hero .right{
+    display: flex;
+  }
+  
 }
 
 
