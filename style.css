@@ -178,11 +178,20 @@ header {
   #navbar .nav-list ul{
     display: none;
     background: white;
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease;
   }
+
   #navbar .nav-list.active ul{
+    
+    border-top:1px solid var(--blu);
     margin: 4rem 0rem;
+    margin-top: 5rem;
+    margin-right:1rem;
     display: block;
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease;
   }
   #navbar{
@@ -191,9 +200,11 @@ header {
     
   }
   #navbar .nav-list.active ul li{
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right:1rem;
   }
 }
 
