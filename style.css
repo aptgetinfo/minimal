@@ -891,6 +891,9 @@ textarea:focus {
   transform: scale(0.95);
   transition: box-shadow 0.5s, transform 0.5s;
 }
+.four .four-container .right .right-card h1{
+  margin-bottom: 1rem;
+}
 .four .four-container .right .right-card a{
   color: var(--blu);
   text-decoration: none;
@@ -902,7 +905,6 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 1rem;
 }
 .four .four-container .right .right-card:hover{
   transform: scale(1);
