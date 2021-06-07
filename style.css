@@ -920,11 +920,11 @@ textarea:focus {
   color: var(--blu);
   text-decoration: none;
   font-size: 1rem;
+  margin: 0 auto;
 }
 
 .four .four-container .right .right-card .links {
   max-width: 75%;
-  min-height: 2rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -932,7 +932,7 @@ textarea:focus {
 }
 .four .four-container .right .right-card .links a {
   font-family: FontAwesome;
-  font-size: 22px;
+  font-size: 20px;
 }
 .four .four-container .right .right-card:hover {
   transform: scale(1);
@@ -1322,20 +1322,21 @@ textarea:focus {
 }
 
 /*    four right starts here     */
-@media (max-width: 655px) {
-  .four .four-container .right {
-    padding: 0;
-  }
-}
 
-@media (max-width: 627px) {
+@media (max-width: 800px) {
   .four .four-container .right {
-    margin: 0rem 0.5rem;
+    margin: 0rem ;
     margin-bottom: 0.5rem;
   }
   .four .four-container .right .right-card {
     padding: 1rem 0;
     margin: 1rem auto;
+  }
+}
+
+@media (max-width: 627px) {
+  .four .four-container .right {
+    padding: 0rem;
   }
 }
 
@@ -1351,7 +1352,7 @@ textarea:focus {
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0rem; */
   }
   .four .four-container .right .right-card {
     min-height: 3rem;
