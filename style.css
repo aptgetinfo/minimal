@@ -1385,6 +1385,7 @@ textarea:focus {
 @media (max-width:627px) {
   .four .four-container .right{
     margin: 0rem 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .four .four-container .right .right-card{
     padding:1rem 0;
@@ -1404,7 +1405,7 @@ textarea:focus {
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .four .four-container .right .right-card{
   min-height: 3rem;
