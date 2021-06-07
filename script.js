@@ -49,3 +49,14 @@ window.addEventListener("scroll", () => {
 // });
 
 // youtubeLink.setAttribute("href", "https://youtu.be/RsPWEmfOQdU");
+const menuBtn = document.querySelector('.menu-toggle');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
