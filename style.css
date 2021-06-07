@@ -985,6 +985,7 @@ textarea:focus {
 
 @media (max-width: 440px) {
   .parallax {
+    background-image: url("./Images/bng-02.png");
     height: 90%;
   }
   .hero {
