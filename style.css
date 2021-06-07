@@ -878,11 +878,11 @@ textarea:focus {
 
 /* end here */
 
-@media only screen and (max-device-width: 1359px) {
+/* @media only screen and (max-device-width: 359px) {
   .parallax {
     background-attachment: scroll;
   }
-}
+} */
 
 .four .four-container .right {
   /* border: 1px solid; */
