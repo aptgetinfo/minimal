@@ -164,13 +164,13 @@ header {
   /* border: 1px solid black; */
   position: fixed;
   top: 1.9rem;
-  right: 1rem;
+  right: 1.3rem;
   cursor: pointer;
   display: none;
 }
 
 .menu-btn__burger {
-  width: 25px;
+  width: 30px;
   height: 4px;
   background: black;
   border-radius: 5px;
@@ -181,7 +181,7 @@ header {
 .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 25px;
+  width: 30px;
   height: 4px;
   background: black;
   border-radius: 5px;
